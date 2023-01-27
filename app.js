@@ -11,7 +11,7 @@ app.post('/submit-form', (req, res) => {
     res.send('Form data saved to file');
 });
 
-app.use('/texts', (req, res, next) => {
+app.get('/texts', (req, res) => {
   fs.readFile('public/textfile.txt', 'utf8', (err, data) => {
     if (err) return next(err);
     res.send(data);
