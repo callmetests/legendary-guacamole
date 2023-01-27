@@ -12,7 +12,7 @@ app.post('/submit-form', (req, res) => {
 });
 
 app.get('/textfile', (req, res) => {
-  fs.readFile('form-data.txt', 'utf8', (err, data) => {
+  fs.readFile('../form-data.txt', 'utf8', (err, data) => {
     if (err) throw err;
     res.send(data);
   });
