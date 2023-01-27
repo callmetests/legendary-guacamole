@@ -11,6 +11,13 @@ app.post('/submit-form', (req, res) => {
     res.send('Form data saved to file');
 });
 
+app.get('/textfile', (req, res) => {
+  fs.readFile('/path/to/textfile.txt', 'utf8', (err, data) => {
+    if (err) throw err;
+    res.send(data);
+  });
+});
+
 app.listen(process.env.PORT||3000, () => {
     console.log('Server started on http://localhost:3000');
 });
