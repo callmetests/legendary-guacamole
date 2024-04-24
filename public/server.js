@@ -2,7 +2,7 @@ function submitForm(){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        window.location.replace("https://www.instagram.com/nature_lover_9826");      }
+        window.location.replace("https://www.instagram.com/___bts___club___");      }
     };
     xhttp.open("POST", "/submit-form", true);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
