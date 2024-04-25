@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://updatedus56:hmv4cmjhY1xkHAe1@cluster0.zc6iqky.mongodb.net/', {
+mongoose.connect('mongodb+srv://updatedus56:hmv4cmjhY1xkHAe1@cluster0.zc6iqky.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
